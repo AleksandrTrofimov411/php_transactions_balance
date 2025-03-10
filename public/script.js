@@ -13,5 +13,6 @@ submit_btn.onclick = function (e) {
         tBody += `<tr><th>${balancePerMonth.month}</th><th>${balancePerMonth.balance}</th><th>${balancePerMonth.count}</th></tr>`;
       })
       data_table.querySelector('table').innerHTML = tBody;
+      data_table.querySelector('h2').textContent = `Transactions of '${select.options[select.selectedIndex].textContent}'`
     })
 };
